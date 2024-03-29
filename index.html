@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人站 lanck" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>lanck Zoom</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="any" mask="" href="./asset/catico.ico" />
+  </head>
+  <body>
+    <div class="page-head flex flex-row justify-center text-white">
+      <div class="page-head-inner">
+        <div class="head-mune flex flex-row mt-5">
+          <a
+            class="text-xl underline-offset-4 hover:underline"
+            href="./index.html"
+            >My Website</a
+          >
+          <span class="flex-1"></span>
+          <a class="mr-5 underline-offset-4 hover:underline" href="#mySkill"
+            >技术栈</a
+          >
+          <a class="mr-5 underline-offset-4 hover:underline" href="#interest"
+            >业余爱好</a
+          >
+          <a
+            href="#mySkill"
+            class="underline-offset-4 hover:underline"
+            href="#about"
+            >关于</a
+          >
+        </div>
+        <div class="head-info flex flex-col items-center">
+          <div class="avtor mt-20">
+            <img src="./asset/touxiang.jpeg" class="width-full" alt="" />
+          </div>
+          <span class="mt-5 text-3xl">Hello,I'm Lanck</span>
+          <span class="mt-5 mb-16">前端工程师</span>
+        </div>
+      </div>
+    </div>
+    <div class="page-body">
+      <div class="page-body-inner m-auto">
+        <p class="mt-20" id="mySkill">我的技术栈</p>
+        <div class="flex flex-row justify-between mt-10 text-white">
+          <div class="inner-item item1 shadow-sm">
+            <span class="text-2xl">NodeJs</span>
+          </div>
+          <div class="inner-item item2 shadow-sm">
+            <span class="text-2xl">Vue</span>
+          </div>
+          <div class="inner-item item3 shadow-sm">
+            <span class="text-2xl">React</span>
+          </div>
+          <div class="inner-item item4 shadow-sm">
+            <span class="text-2xl">TS</span>
+          </div>
+        </div>
+        <p class="mt-10" id="interest">我的业余爱好</p>
+        <div class="flex flex-row justify-between mt-10 text-white">
+          <div
+            class="inner-item shadow-sm"
+            style="background-image: url('./asset/sw.jpeg')"
+          >
+            <span class="text-2xl">上网</span>
+          </div>
+          <div
+            class="inner-item item2 shadow-sm"
+            style="background-image: url('./asset/yx.jpg')"
+          >
+            <span class="text-2xl">游戏</span>
+          </div>
+          <div
+            class="inner-item item3 shadow-sm"
+            style="background-image: url('./asset/dy.jpeg')"
+          >
+            <span class="text-2xl">钓鱼</span>
+          </div>
+          <div
+            class="inner-item item4 shadow-sm"
+            style="background-image: url('./asset/cat.jpg')"
+          >
+            <span class="text-2xl">养猫</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer mt-20" id="about">
+      <div class="flex flex-row justify-center items-center pt-5 h-15 m-auto">
+        <img
+          class="mr-10 cursor-pointer"
+          src="./asset/github-o.png"
+          style="width: 30px; height: 30px"
+          alt=""
+        />
+        <img
+          class="mr-10 cursor-pointer"
+          src="./asset/gitlab.png"
+          style="width: 30px; height: 30px"
+          alt=""
+        />
+        <img
+          class="cursor-pointer"
+          style="width: 120px"
+          src="https://img.alicdn.com/imgextra/i2/O1CN01FF1t1g1Q3PDWpSm4b_!!6000000001920-55-tps-508-135.svg"
+          alt="iconfont Logo"
+        />
+      </div>
+      <p class="mt-14" style="border-bottom: 1px solid #645f5f"></p>
+      <div class="m-auto h-12 flex flex-row items-center justify-center">
+        <span class="text-gray-400">Copynight @ 2020.lanck</span>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    min-width: 1200px !important;
+  }
+  .page-head {
+    /* height: 350px; */
+    background-image: url("./asset/image3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* background-position: 0%; */
+    background-attachment: fixed;
+    /* filter: blur(1px); */
+  }
+  .page-body {
+  }
+  .page-head-inner,
+  .page-body-inner {
+    width: 1200px;
+    /* background-color: #ccc; */
+  }
+  .page-footer {
+    /* height: 160px; */
+    background: #000;
+  }
+
+  .avtor {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+  }
+  .inner-item {
+    width: 24%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    transform: translateY(0) translateX(0);
+    opacity: 0.7;
+    background-size: cover;
+    /* background-position: 5% 0; */
+  }
+  .inner-item:hover {
+    cursor: pointer;
+    transform: translateY(-15px) translateX(0);
+    opacity: 1;
+    /* background-size: auto 110%; */
+    /* background-position: 0 5%; */
+  }
+  .inner-item > span {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+  }
+  /* .inner-item > span:hover {
+    color: red;
+    bottom: 12px;
+    right: 5px;
+  } */
+  .item1 {
+    background-image: url(./asset/nodejs.png);
+  }
+  .item2 {
+    background-image: url(./asset/vue1.png);
+  }
+  .item3 {
+    background-image: url(./asset/react.png);
+  }
+  .item4 {
+    background-image: url(./asset/ts.jpg);
+  }
+</style>
